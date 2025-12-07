@@ -9,3 +9,4 @@ datasets
 tensorboard
 peft
 matplotlib
+modelscope
