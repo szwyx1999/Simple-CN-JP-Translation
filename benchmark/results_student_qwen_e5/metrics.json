@@ -1,0 +1,9 @@
+{
+  "BLEU": 0.003192879193970369,
+  "chrF": 1.8434608865886257,
+  "TER": 275.19500780031206,
+  "num_samples": 1144,
+  "model_path": "C:\\Users\\tenpercent\\Desktop\\Lab3.12\\Simple-CN-JP-Translation\\checkpoint-epoch-5-step-3220",
+  "test_ja_file": "C:\\Users\\tenpercent\\Desktop\\Lab3.12\\Simple-CN-JP-Translation\\sports_data_filtering\\wccjc_sports_03.test.ja",
+  "test_zh_file": "C:\\Users\\tenpercent\\Desktop\\Lab3.12\\Simple-CN-JP-Translation\\sports_data_filtering\\wccjc_sports_03.test.zh"
+}

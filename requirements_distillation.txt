@@ -1,0 +1,11 @@
+transformers==4.56.0
+torch>=2.0.0
+safetensors
+tqdm
+sacrebleu
+numpy
+accelerate
+datasets
+tensorboard
+peft
+matplotlib

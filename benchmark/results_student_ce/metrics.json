@@ -1,0 +1,9 @@
+{
+  "BLEU": 1.0360004942235004,
+  "chrF": 17.193721573605774,
+  "TER": 111.40861466821886,
+  "num_samples": 2000,
+  "model_path": "C:\\Users\\tenpercent\\Desktop\\Lab3.12\\Simple-CN-JP-Translation\\distilled_ce_stage",
+  "test_ja_file": "C:\\Users\\tenpercent\\Desktop\\Lab3.12\\wccjc\\WCC-JC 3.0\\test.ja",
+  "test_zh_file": "C:\\Users\\tenpercent\\Desktop\\Lab3.12\\wccjc\\WCC-JC 3.0\\test.zh"
+}

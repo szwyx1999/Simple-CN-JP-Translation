@@ -1,0 +1,15 @@
+train
+
+py -3.12 wccjc_sports_filter_v2.py train ^
+  --root_dir wccjc_all ^
+  --out_prefix sports_model ^
+  --max_pos 8000
+
+
+scan
+
+py -3.12 wccjc_sports_filter_v2.py scan ^
+  --root_dir wccjc_all ^
+  --model_prefix sports_model ^
+  --out_tsv wccjc_sports.tsv ^
+  --threshold 0.3

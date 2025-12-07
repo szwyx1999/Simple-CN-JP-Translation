@@ -1,0 +1,32 @@
+# Example command to train a distilled model for Chinese-Japanese translation
+# Based on Hunyuan-MT-7B teacher model, using WCC-JC 2.0 dataset
+
+python train_distillation.py \
+    --teacher_model_path Hunyuan-MT-7B \
+    --output_dir ./distilled_model_cn_ja \
+    --train_ja_file "Web-Crawled-Corpus-for-Japanese-Chinese-NMT/WCC-JC 2.0/train-ja-demo-200k.txt" \
+    --train_zh_file "Web-Crawled-Corpus-for-Japanese-Chinese-NMT/WCC-JC 2.0/train-ch-demo-200k.txt" \
+    --direction ja2zh \
+    --batch_size 4 \
+    --gradient_accumulation_steps 4 \
+    --learning_rate 5e-5 \
+    --num_epochs 3 \
+    --temperature 2.5 \
+    --alpha 0.7 \
+    --student_hidden_size 2048 \
+    --student_num_layers 12 \
+    --student_num_heads 16 \
+    --student_intermediate_size 8192 \
+    --max_length 512 \
+    --warmup_steps 100 \
+    --save_steps 500 \
+    --logging_steps 50 \
+    --fp16
+
+# For Chinese->Japanese translation, change direction:
+# --direction zh2ja
+
+# For training on both directions, use:
+# --direction both
+# (Note: This will train on ja2zh by default, you may need to modify the script for true bidirectional training)
+

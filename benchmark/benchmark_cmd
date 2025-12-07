@@ -1,0 +1,5 @@
+python test_distillation_v2.py \
+  --model_path "path/distilled_model" \
+  --test_ja_file "path/to/ja" \
+  --test_zh_file "path/to/zh"
+  --output_dir "results_xxx"
